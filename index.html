@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="bg-light py-3 py-lg-5">
+    <div class="container">
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home1-tab" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home1" aria-selected="true">Главная</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile1-tab" data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile1" aria-selected="false">Итоги</button>
+        </li>
+      </ul>
+    <div class="text-center">
+      <h1>Входная анкета</h1>
+      <p>Заполните для гильдии приключения</p>
+    </div>
+    
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1">
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+          <h4 class="m-0">Первая часть</h4>
+          <h6 class="m-0">Вводная часть</h6>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+          <h4 class="m-0">Вторая часть</h4>
+          <h6 class="m-0">Вступительный экзамен</h6>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+          <h4 class="m-0">Третья часть</h4>
+          <h6 class="m-0">Вводная часть</h6>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-content">
+      <div class="">
+        <div class="row">
+          <div class="col-md-3 mb3 mt-3">
+            <label for="exampleFormControlInput1" class="form-label">Пол:</label>
+            <div class="form-check">
+              
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Женский</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Мужской</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb3 mt-3">
+            <label for="exampleFormControlInput1" class="form-label">Возраст:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" >
+
+          </div>
+          <div class="col-md-6 mb3 mt-3">
+            <label for="exampleFormControlInput1" class="form-label">Телефон:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6 mb-12">
+          <label for="exampleFormControlInput1" class="form-label">Имя:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="col-md-6 mb-12">
+          <label for="exampleFormControlInput1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9 mb-12">
+            <label for="exampleFormControlInput1" class="form-label">Адрес:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="123 улица Светлая">
+          </div>
+          <div class="col-md-3 mb-12">
+            <label for="exampleFormControlInput1" class="form-label">дом</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="34">
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-12">
+              <label for="exampleFormControlInput1" class="form-label">Город:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Монштад">
+            </div>
+            <div class="col-md-2 mb-12">
+              <label for="exampleFormControlInput1" class="form-label">Почта:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="123">
+            </div>
+            <div class="col-md-4 mb-12">
+              <label for="exampleFormControlInput1" class="form-label">Ваша регион:</label>
+              <select class="form-select">
+                <option>Монштад</option>
+                <option>Ли Юэ</option>
+                <option>Инадзума</option>
+                <option>Сумеро</option>
+                <option>Фонтейн</option>
+              </select>
+            </div>
+            </div>
+              <button class="btn btn-outline-secondary d-block ms-auto" type="button"id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Вторая часть</button>
+      </div>
+    </div>
+  </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="tab-content">
+        <h2 class=" h5 text-center mb-3 mt-3"> Первый вопрос:Цветок, которого нет в Вольфендоме</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/wolf.png" class="figure-img img-fluid rounded">
+              <figcaption class="figre-captiop"> Текст</figcaption>
+            </figure>
+
+          </div>
+        <div class="col-lg-6">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Лилия калла
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Ветряная астра
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Закатник
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Одуванчик
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input type="text" class="form-control " id="inputPassword">
+            <p>другой вариант ответа</p>
+          </div>
+        </div>
+        </div>
+        <hr class="my-4">
+        <h2 class=" h5 text-center mb-3"> Второй вопрос:Искатель приключений, оставивший дневники и заметки</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/Book_Thick_Notebook.png" class="figure-img img-fluid rounded">
+              <figcaption class="figre-captiop"> Текст</figcaption>
+            </figure>
+
+          </div>
+        <div class="col-lg-6">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Роальд
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Катерина
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Джин
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Лиза
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input type="text" class="form-control " id="inputPassword">
+            <p>другой вариант ответа</p>
+          </div>
+        </div>
+        </div>
+        <hr class="my-4">
+        <h2 class=" h5 text-center mb-3"> Третий вопрос:Безветренная земля</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/202131771228-800x450.png" class="figure-img img-fluid rounded">
+              <figcaption class="figre-captiop"> Текст</figcaption>
+            </figure>
+
+          </div>
+        <div class="col-lg-6">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Каменный лес Гуй Жун
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Тайный лес
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Пепельное море
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Цуруми
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input type="text" class="form-control " id="inputPassword">
+            <p>другой вариант ответа</p>
+          </div>
+        </div>
+        </div>
+        <hr class="my-4">
+        <h2 class=" h5 text-center mb-3"> Четвёртый вопрос:Какую официальную дожность занимет Кэйя</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <figure class="figure">
+              <img src="img/Epi7ZAnXIAIByNF.png" class="figure-img img-fluid rounded">
+              <figcaption class="figre-captiop"> Текст</figcaption>
+            </figure>
+
+          </div>
+        <div class="col-lg-6">
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Один из троиться пьянчуг Монштада
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Младший брат Дилюка
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Офицер орда Фавония
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Капитан кавалерии
+            </label>
+          </div>
+          <div class="form-check mb-1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <input type="text" class="form-control " id="inputPassword">
+            <p>другой вариант ответа</p>
+          </div>
+        </div>
+        </div>
+        <button class="btn btn-outline-secondary d-block ms-auto" type="button"id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Третья часть</button>
+      </div>
+    </div>
+
+
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+  <div class="tab-content">
+    
+      <div class="row">
+          <div class="col-lg-6">
+            <h2 class=" h5 text-center mb-3 mt-2" > Пятый вопрос: </h2>
+            <p>На Драконьем хребте Альбедо предлагает вам провести с ним эксперемент. Как часто вы соглашаетесь на это?</p>
+          </div>
+          <div class="col-lg-6 mt-3">
+            <div class="d-flex justify-content-between">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Часто</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Иногда</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">не знаю</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Редко</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Никогла</label>
+              </div>
+              </div>
+            <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <hr class="my-4">
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class=" h5 text-center mb-3 mt-2" > Шестой вопрос: </h2>
+              <p>Эмбер просит вас принять поручение, в сборе материалов для Барона зайчика. Как часто вы соглашаетесь?</p>
+            </div>
+            <div class="col-lg-6 mt-3">
+              <div class="d-flex justify-content-between">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Часто</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Иногда</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">не знаю</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Редко</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Никогла</label>
+              </div>
+              </div>
+              <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <hr class="my-4">
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class=" h5 text-center mb-3 mt-2" > Седьмой вопрос: </h2>
+          <p>Катерина просит вас выполнить поручение по обороне мономента. Какую сложность вы бы поставили этому заданию?</p>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-secondary" for="btnradio1">  1</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnradio2">  2 </label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnradio3"> 3</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnradio4"> 4</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnradio5"> 5</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+            <label class="btn btn-outline-secondary" for="btnradio6"> n/a</label>
+          </div>
+          <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <hr class="my-4">
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class=" h5 text-center mb-3 mt-2" > Восьмой вопрос: </h2>
+        <p>Катерина просит вас принять поручение Тимми. Какую сложность вы бы поставили этому заданию?</p>
+      </div>
+      <div class="col-lg-6 mt-3">
+        <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio7" autocomplete="off" checked>
+          <label class="btn btn-outline-secondary" for="btnradio7">  1</label>
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio9" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="btnradio9">  2 </label>
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio10" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="btnradio10"> 3</label>
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio11" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="btnradio11"> 4</label>
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio12" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="btnradio12"> 5</label>
+          <input type="radio" class="btn-check" name="btnradio7" id="btnradio13" autocomplete="off">
+          <label class="btn btn-outline-secondary" for="btnradio13"> n/a</label>
+        </div>
+
+        <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <hr class="my-4">
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class=" h5 text-center mb-3 mt-2" > Восьмой вопрос: </h2>
+      <p>Какую сложность вы бы поставили регеону Монштад?</p>
+    </div>
+    <div class="col-lg-6 mt-3">
+      <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+        <label for="customRange1" class="form-label">1</label>
+        <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+        <label for="customRange1" class="form-label">5</label>
+        </div>
+
+      <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <h2 class=" h5 text-center mb-3 mt-2" > Восьмой вопрос: </h2>
+    <p>Какую бы сложность вы бы поставили региону Ли Юэ??</p>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="d-flex justify-content-between btn-group" role="group" aria-label="Basic radio toggle button group">
+      <label for="customRange1" class="form-label">1</label>
+      <input type="range" class="form-range" min="1" max="5" step="1" id="customRange1">
+      <label for="customRange1" class="form-label">5</label>
+      </div>
+      <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  
+</div>
+<button class="btn btn-outline-secondary d-block ms-auto" type="button"id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Итоги</button>
+  </div>
+  </div>
+    </div>
+</div>
+  <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1"> 
+    <div class="container">
+      <h2 class=" h5 text-center mb-3 mt-2" > Итоги экзамена: </h2>
+      <div class="row">
+        <div class="col-lg-6">
+        <h2 class=" h5 mb-3 mt-2" > Итоги 1 Вопроса: </h2>
+        <p>вариант 1</p>
+        <p>вариант 2</p>
+        <p>вариант 3</p>
+        <p>вариант 4</p>
+        <p>вариант 5</p>
+        </div>
+        <div class="col-lg-6 mt-3">
+          <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+          </div>
+        </div>
+        <hr class="my-4">
+   </div>
+   <div class="row">
+    <div class="col-lg-6">
+    <h2 class=" h5 mb-3 mt-2" > Итоги 2 Вопроса: </h2>
+    <p>вариант 1</p>
+    <p>вариант 2</p>
+    <p>вариант 3</p>
+    <p>вариант 4</p>
+    <p>вариант 5</p>
+    </div>
+    <div class="col-lg-6 mt-3">
+      <div class="progress mt-4">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+      <div class="progress mt-4">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">25%</div>
+      </div>
+      <div class="progress mt-4">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+      </div>
+      <div class="progress mt-4">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+      </div>
+      <div class="progress mt-4">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+      </div>
+    </div>
+    <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 3 Вопроса: </h2>
+  <p>Варианы ответов</p>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress mt-4">
+      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">2</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">3</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">4</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 4 Вопроса: </h2>
+  <p>Варианы ответов</p>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress mt-4">
+      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">1</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 5%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">2</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">3</div>
+      <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">4</div>
+      <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 5 Вопроса: </h2>
+  <p>Варианы ответов</p>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">3/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 6 Вопроса: </h2>
+  <p>Варианы ответов</p>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">1/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 7 Вопроса: </h2>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 8 Вопроса: </h2>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">5/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 9 Вопроса: </h2>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">2/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 class=" h5 mb-3 mt-2" > Итоги 10 Вопроса: </h2>
+  </div>
+  <div class="col-lg-6 mt-3">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">4/5</div>
+    </div>
+  </div>
+  <hr class="my-4">
+</div>
+</div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
